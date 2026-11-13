@@ -85,6 +85,7 @@ v2.0 (2026-11-13)
 - Butonul "Alege..." listează pack-urile tale direct din Telegram.
 - Se acceptă și linkul t.me/addstickers/... în câmpul Pack.
 - Interfață în română și engleză.
+- Icoană proprie.
 
 v1.1
 - Text pe sticker: font, mărime, culoare, contur, bold, poziție, previzualizare live.

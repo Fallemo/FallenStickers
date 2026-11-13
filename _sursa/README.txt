@@ -85,6 +85,7 @@ v2.0 (2026-11-13)
 - "Choose..." lists your own sticker packs straight from Telegram.
 - The Pack field also accepts a t.me/addstickers/... link.
 - Romanian and English interface.
+- App icon.
 
 v1.1
 - Text on stickers: font, size, color, outline, bold, position, live preview.

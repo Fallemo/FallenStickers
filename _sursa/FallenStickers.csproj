@@ -3,6 +3,7 @@
     <OutputType>WinExe</OutputType>
     <TargetFramework>net8.0-windows</TargetFramework>
     <UseWPF>true</UseWPF>
+    <ApplicationIcon>app.ico</ApplicationIcon>
     <Nullable>disable</Nullable>
     <AssemblyName>FallenStickers</AssemblyName>
     <Version>2.0.0</Version>
@@ -18,6 +19,9 @@
     <RuntimeIdentifier>win-x64</RuntimeIdentifier>
     <IncludeNativeLibrariesForSelfExtract>true</IncludeNativeLibrariesForSelfExtract>
   </PropertyGroup>
+  <ItemGroup>
+    <Resource Include="app.ico" />
+  </ItemGroup>
   <ItemGroup>
     <PackageReference Include="WTelegramClient" Version="4.4.10" />
   </ItemGroup>

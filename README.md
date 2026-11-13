@@ -1,4 +1,8 @@
+<img src="icon.png" width="96" align="left" alt="" />
+
 # FallenStickers
+
+<br clear="left"/>
 
 **Add pictures to your own Telegram sticker pack in one click — right-click → Send to → Telegram sticker.**
 

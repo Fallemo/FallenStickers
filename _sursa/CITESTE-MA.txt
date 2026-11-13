@@ -1,0 +1,94 @@
+FallenStickers v2.0  –  © 2026 Fallen
+=====================================
+https://github.com/Fallemo/FallenStickers
+
+Urcă poze în pack-ul TĂU de stickere Telegram dintr-un singur click.
+Face singur tot ce făceai de mână în @Stickers: /addsticker, alege pack-ul,
+redimensionează la 512 px pe latura mare, salvează PNG sub 512 KB, trimite ca fișier,
+pune emoji-ul, /done. Poți scrie și text pe sticker (font, culoare, contur, poziție).
+
+Cerințe: Windows 10/11 cu .NET 8 Desktop Runtime (dacă nu pornește, instalează-l de la
+https://dotnet.microsoft.com/download/dotnet/8.0 → ".NET Desktop Runtime").
+
+
+PRIMII PAȘI (o singură dată) – îi găsești și în aplicație, la "Setări și primii pași"
+-------------------------------------------------------------------------------------
+1. api_id și api_hash
+   Intră pe https://my.telegram.org/apps, loghează-te cu numărul tău de Telegram,
+   la "API development tools" creează o aplicație (orice titlu și nume scurt,
+   ex. "stickers", platforma Desktop). Copiază "App api_id" (un număr) și
+   "App api_hash" (un șir lung) în FallenStickers.
+   Sunt ale tale – nu le da altcuiva.
+
+2. Un pack de stickere (doar dacă nu ai deja)
+   În Telegram deschide @Stickers și trimite /newpack. Dă-i un nume, trimite o
+   primă poză ca FIȘIER (PNG 512 px) și un emoji, apoi /publish, /skip la iconiță
+   și alege numele scurt (linkul pack-ului: t.me/addstickers/<nume>).
+
+3. Telefon și pack
+   Scrie telefonul cu prefix (ex. +40...) și apasă "Alege..." lângă Pack.
+   La prima logare primești un cod în Telegram (și ți se cere parola 2FA, dacă ai).
+   Apoi alegi pack-ul din listă. (Poți scrie și de mână numele scurt sau linkul.)
+
+4. Apasă "Adaugă în meniul Send to".
+
+
+FOLOSIRE
+--------
+- Click dreapta pe una sau mai multe poze → Send to → Telegram sticker
+  (sau trage pozele în fereastră / peste FallenStickers.exe).
+- Alege emoji-ul fiecărei poze (scrie-l, Win + . pentru tastatura de emoji, sau
+  click pe unul din rândul de jos – se pune pe poza selectată și trece la următoarea).
+- Opțional scrie text pe poză (vezi mai jos).
+- Apasă "Urcă în <pack>". În jurnal vezi ce răspunde @Stickers la fiecare pas.
+
+Opțiuni:
+- "urcă imediat cu emoji-ul implicit" – din Send to urcă direct, fără să aștepte.
+- "închide fereastra singură" – după succes, fereastra se închide.
+
+Formate: PNG, JPG, BMP, GIF (primul cadru), TIFF, WEBP/HEIC (dacă Windows are codecul).
+Pozele de pe telefon sunt rotite corect după EXIF. Transparența PNG se păstrează.
+Pack-ul trebuie să fie de stickere statice (nu animate / video).
+
+
+TEXT PE STICKER
+---------------
+Selectează o poză din listă; în dreapta apare previzualizarea mare.
+- Scrie textul în căsuța de sub poză (Enter = rând nou; rândurile lungi se rup singure).
+- Font: orice font instalat în Windows (implicit Impact). Bold opțional.
+- Mărime și Contur: din glisoare (contur 0 = fără contur).
+- Culoare / Culoare contur: click pe un pătrățel sau scrie codul (#RRGGBB).
+- Poziție: trage cu mouse-ul pe poză, sau butoanele Sus / Mijloc / Jos.
+- "Stilul la toate" copiază stilul (nu și textul) pe toate pozele.
+- Ultimul stil folosit se ține minte.
+
+
+LIMBĂ
+-----
+Română / English – din colțul din dreapta sus. "Auto" alege după setările Windows.
+
+
+DATE ȘI SIGURANȚĂ
+-----------------
+Totul rămâne pe calculatorul tău, în %APPDATA%\FallenStickers
+(config.json = setări, session.dat = sesiunea Telegram).
+session.dat = acces la contul tău Telegram: nu-l da nimănui.
+"Deconectează contul" îl șterge. Aplicația vorbește doar cu Telegram (botul @Stickers).
+Codul sursă e public pe GitHub.
+
+
+ISTORIC
+-------
+v2.0 (2026-11-13)
+- Redenumit FallenStickers; aplicație pentru oricine, fără date implicite.
+- Primii pași explicați în aplicație.
+- Butonul "Alege..." listează pack-urile tale direct din Telegram.
+- Se acceptă și linkul t.me/addstickers/... în câmpul Pack.
+- Interfață în română și engleză.
+
+v1.1
+- Text pe sticker: font, mărime, culoare, contur, bold, poziție, previzualizare live.
+
+v1.0
+- Send to / drag & drop, redimensionare 512 px, PNG sub 512 KB, emoji per poză,
+  urcare automată prin @Stickers.
